@@ -18,10 +18,10 @@ export const UsersUncolapsedMode = () => <Accordion titleValue={"Users"} collaps
 
 export const UnCollapsed = () => {
   let [value, setValue] = useState(true)
-  
+
   return  <Accordion titleValue={"Users"} collapsed={value} onChange={() => setValue(!value)} items={[
                                                                         {title:"Dimych", value:1},
                                                                         {title:"Valera", value:2},
                                                                         {title:"Victor", value:3}]}
-                                                                         onClick={(id) => { alert(`user width id ${id} should be happy`)}}/>
+                                                                         onClick={(value) => { alert(`user width id ${value} should be happy`)}}/>
 }
