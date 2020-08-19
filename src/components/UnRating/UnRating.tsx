@@ -7,7 +7,7 @@ type RatingPropsType = {
     onChange: (value: RatingvalueType) => void
 }
 
-function UnRating(props: RatingPropsType) {
+function UnRatingSecret(props: RatingPropsType) {
     let [value, setValue] = useState<RatingvalueType>(props.defaultValue ? props.defaultValue : 0)
     return (
         <div>
@@ -20,6 +20,7 @@ function UnRating(props: RatingPropsType) {
     )
 }
 
+
 type StarPropsType = {
     selected: boolean,
     setValue: () => void
@@ -30,4 +31,6 @@ function Star(props: StarPropsType) {
                 { props.selected ? <b>star </b> : "star "}
             </span>
 }
+
+const UnRating  = React.memo(UnRatingSecret)
 export default UnRating;

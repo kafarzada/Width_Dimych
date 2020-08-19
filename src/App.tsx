@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Rating, { RatingvalueType } from "./components/Rating/Rating"
+import { Select } from './components/Select/Select';
+import UncontrolledAccordion from './components/UncontrolledAccordion/UncontrolledAccordion';
 
 
 
@@ -12,7 +14,7 @@ function App() {
   let [switchOn, setswitchOn] = useState(false) //  hook 
   return (
     <div className="App">
-
+      <UncontrolledAccordion titleValue={"Users"}/>
     </div>
   );
 }

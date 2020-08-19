@@ -7,7 +7,7 @@ type RatingPropsType = {
     onClick: (value: RatingvalueType) => void
 }
 
-function Rating(props: RatingPropsType) {
+function RatingSecret(props: RatingPropsType) {
     console.log("Rating rendering");
 
     return (
@@ -22,6 +22,8 @@ function Rating(props: RatingPropsType) {
 
 
 }
+
+const Rating = React.memo(RatingSecret)
 
 
 type StarPropsType = {

@@ -1,18 +1,23 @@
-.block {
+.Select__block {
     display: flex;
     flex-direction: row;
     position: relative;
 }
 
+.select {
+    max-width: 200px;
+}
+
 
 .inputSelect {
+    width: 200px;
     display: block;
     border:0;
     padding: 4px;
     border-bottom: 2px solid rgb(156, 156, 156);
     outline: none;
     position: relative;
-  }
+}
 
 
 
@@ -54,4 +59,11 @@
     border-left:5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 10px solid rgb(133, 133, 133);
+}
+
+.listItems {
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0px 3px 6px 5px rgb(170, 169, 169);
+    border-radius: 10px;
 }

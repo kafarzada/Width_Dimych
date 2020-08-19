@@ -8,12 +8,8 @@ type PropsType = {
 
 
 
-function UncontrolledOnOff(props:PropsType) {
-
-
+function UncontrolledOnOffSecret(props:PropsType) {
     let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false) //  hook 
-    
-    
     const onStyle = {
         width: "30px",
         height: "20px",
@@ -61,5 +57,5 @@ function UncontrolledOnOff(props:PropsType) {
     );
 }
 
-
+const UncontrolledOnOff = React.memo(UncontrolledOnOffSecret)
 export default UncontrolledOnOff;
